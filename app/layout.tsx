@@ -1,6 +1,4 @@
 import "./globals.css";
-import localFont from 'next/font/local'
-
 import { Raleway } from 'next/font/google'
 
 const raleway = Raleway({
