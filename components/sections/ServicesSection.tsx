@@ -7,8 +7,19 @@ import { IoMdCloudOutline } from "react-icons/io";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { LuBrainCircuit } from "react-icons/lu";
+import ServiceCard from "../ServiceCard";
 
 export default function ServicesSection( { id }: SectionProps) {
+
+  const services = [
+    { Icon: FaLaptopCode, title: "Web Development", description: "We build responsive and modern websites that are fast and scalable." },
+    { Icon: ImMobile, title: "Mobile Apps", description: "Creating intuitive mobile applications for iOS and Android platforms." },
+    { Icon: LuBrainCircuit, title: "Custom Software Solutions", description: "SweetSpot delivers custom software solutions tailored to your business needs." },
+    { Icon: IoMdCloudOutline, title: "Cloud Computing", description: "SweetSpot provides cloud computing to securely manage data." },
+    { Icon: MdOutlineDesignServices, title: "UI/UX Design", description: "Designing user-friendly interfaces and experiences for your products." },
+    { Icon: IoChatbubbleEllipsesOutline, title: "Chatbots & Virtual Assistants", description: "SweetSpot creates chatbots and virtual assistants to improve interactions." }
+  ];
+
   return (
     <section
       id={id}
@@ -22,54 +33,14 @@ export default function ServicesSection( { id }: SectionProps) {
         </h2>
 
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <FaLaptopCode className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">Web Development</h3>
-            <p className="text-gray-400">
-              We build responsive and modern websites that are fast and scalable.
-            </p>
-          </div>
-
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <ImMobile className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">Mobile Apps</h3>
-            <p className="text-gray-400">
-              Creating intuitive mobile applications for iOS and Android platforms.
-            </p>
-          </div>
-
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <LuBrainCircuit className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">Custom Software Solutions</h3>
-            <p className="text-gray-400">
-              SweetSpot delivers custom software solutions tailored to your business needs.
-            </p>
-          </div>
-          
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <IoMdCloudOutline className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">Cloud Computing</h3>
-            <p className="text-gray-400">
-              SweetSpot provides cloud computing to securely manage data. 
-            </p>
-          </div>
-
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <MdOutlineDesignServices className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">UI/UX Design</h3>
-            <p className="text-gray-400">
-              Designing user-friendly interfaces and experiences for your products.
-            </p>
-          </div>
-
-          <div className="group flex flex-col items-center justify-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-            <IoChatbubbleEllipsesOutline className="text-5xl text-gray-800 transition-colors duration-300 group-hover:text-[#0AB3F6]" />
-            <h3 className="text-2xl font-semibold my-4">Chatbots & Virtual Assistants</h3>
-            <p className="text-gray-400">
-              SweetSpot creates chatbots and virtual assistants to improve customer interactions.
-            </p>
-          </div>
-
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              Icon={service.Icon}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
         </div>
 
     </section>
