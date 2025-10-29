@@ -11,24 +11,27 @@ export default function AboutSection({ id }: SectionProps) {
     >
 
       <div className="mb-8 md:mb-0 md:pr-12 pt-[150px]">
+
         <h2 className="text-4xl md:text-5xl font-bold mt-8 md:mt-0 mb-4 text-white text-center">
           <span className="text-[#0AB3F6]">About</span> Us
         </h2>
-        <div className="flex justify-between relative max-w-full">
-          <Image
-            src="/about.webp"
-            alt="about_image"
-            width={400}
-            height={400}
-            className="hidden lg:block"
-            priority
-            placeholder="blur"
-            blurDataURL="/about-small.webp"
-          />
-          <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify pl-[25px] flex items-center">
+
+        <div className="flex flex-col lg:flex-row justify-between items-start max-w-full">
+          <div className="hidden lg:block w-[400px] h-[400px] flex-shrink-0">
+            <Image
+              src="/about.webp"
+              alt="about_image"
+              width={400}
+              height={400}
+              priority
+              placeholder="blur"
+              blurDataURL="/about-small.webp"
+            />
+          </div>
+          <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify pl-0 lg:pl-[25px] break-words">
             We are a passionate team dedicated to providing innovative solutions that help
             businesses grow and succeed, with a focus on delivering high-quality services
-            tailored to our clients &#39; needs. Sweetspot is a specialized digital agency offering
+            tailored to our clients&#39; needs. Sweetspot is a specialized digital agency offering
             fully integrated digital services, accompanying startups and established businesses
             from concept to launch. We believe that true digital success is achieved only at the
             intersection of technology, design, and performance — the perfect balance we call the
@@ -37,6 +40,7 @@ export default function AboutSection({ id }: SectionProps) {
             solutions built on a deep understanding of their goals and audience.
           </p>
         </div>
+
       </div>
 
     </section>
