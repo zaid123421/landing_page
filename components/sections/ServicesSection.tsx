@@ -12,7 +12,7 @@ export default function ServicesSection( { id }: SectionProps) {
   return (
     <section
       id={id}
-      className="relative z-10 scroll-mt-24 mt-[155px] pb-[155px] min-h-screen flex flex-col items-center justify-center px-6 md:px-20"
+      className="relative z-10 scroll-mt-24 mt-[155px] md:pb-[155px] min-h-screen flex flex-col items-center justify-center px-6 md:px-20"
     >
 
       <div className="skewed-reversed"></div>

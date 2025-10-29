@@ -7,11 +7,12 @@ export default function AboutSection({ id }: SectionProps) {
   return (
     <section
       id={id}
-      className="bg-gradient-to-tr from-[#0C1A2B] to-[#1C2842] relative min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20"
+      className="bg-gradient-to-tr from-[#0C1A2B] to-[#1C2842] relative min-h-screen flex flex-col md:flex-row items-center justify-center p-6 md:p-20"
     >
+
       <div className="mb-8 md:mb-0 md:pr-12 pt-[150px]">
         <h2 className="text-4xl md:text-5xl font-bold mt-8 md:mt-0 mb-4 text-white text-center">
-          About Us
+          <span className="text-[#0AB3F6]">About</span> Us
         </h2>
         <div className="flex justify-between">
           <Image src="/about.png" alt="about_image" width={400} height={400} className="hidden lg:block" />
