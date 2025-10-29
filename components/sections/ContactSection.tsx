@@ -46,11 +46,11 @@ export default function ContactSection({ id }: SectionProps) {
         </form>
         <div className="w-full flex flex-col">
           <p className="text-xl md:text-2xl font-bold">Contact Infromation:</p>
-          
+
           <div className="flex items-center mt-5">
             <FaPhoneAlt className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
-              <h4 className="text-xl font-bold">Phone:</h4>
+              <h4 className="text-xl font-semibold">Phone:</h4>
               <p className="font-medium text-gray-500">+963 936 293 118</p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function ContactSection({ id }: SectionProps) {
           <div className="flex items-center mt-5">
             <MdEmail className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
-              <h4 className="text-xl font-bold">Email:</h4>
+              <h4 className="text-xl font-semibold">Email:</h4>
               <p className="font-medium text-gray-500">team@sweetspot.com</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function ContactSection({ id }: SectionProps) {
           <div className="flex items-center mt-5">
             <FaLocationDot className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
-              <h4 className="text-xl font-bold">Address:</h4>
+              <h4 className="text-xl font-semibold">Address:</h4>
               <p className="font-medium text-gray-500">Damascus</p>
             </div>
           </div>

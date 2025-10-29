@@ -5,10 +5,8 @@ import Image from "next/image";
 
 export default function AboutSection({ id }: SectionProps) {
   return (
-    <section
-      id={id}
-      className="bg-gradient-to-tr from-[#0C1A2B] to-[#1C2842] relative min-h-screen flex flex-col md:flex-row items-center justify-center p-6 md:p-20"
-    >
+<section id={id} className="relative min-h-screen flex items-center justify-center">
+  <div className="skewed-bg-about"></div>
 
       <div className="mb-8 md:mb-0 md:pr-12 pt-[150px]">
 
