@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-feature-settings: "lnum";
+}
+
 .skewed-bg {
   position: absolute;
   top: 0;

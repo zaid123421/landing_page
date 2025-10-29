@@ -51,7 +51,7 @@ export default function ContactSection({ id }: SectionProps) {
             <FaPhoneAlt className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
               <h4 className="text-xl font-bold">Phone:</h4>
-              <p>+963 936 293 118</p>
+              <p className="font-medium text-gray-500">+963 936 293 118</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ export default function ContactSection({ id }: SectionProps) {
             <MdEmail className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
               <h4 className="text-xl font-bold">Email:</h4>
-              <p>team@sweetspot.com</p>
+              <p className="font-medium text-gray-500">team@sweetspot.com</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export default function ContactSection({ id }: SectionProps) {
             <FaLocationDot className="text-3xl mr-5 text-[#0AB3F6]" />
             <div>
               <h4 className="text-xl font-bold">Address:</h4>
-              <p>Damascus</p>
+              <p className="font-medium text-gray-500">Damascus</p>
             </div>
           </div>
 
