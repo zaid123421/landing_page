@@ -14,7 +14,7 @@ export default function ProcessSection({ id }: SectionProps) {
   return (
     <section
       id={id}
-      className="py-10 md:py-20 flex flex-col items-center justify-center px-6 md:px-20 bg-white"
+      className="min-h-screen py-10 md:py-20 flex flex-col items-center justify-center px-6 md:px-20 bg-white"
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800">
         Our <span className="text-[#0AB3F6]">Process</span>
