@@ -45,16 +45,19 @@ export default function Header({ activeSection }: Props) {
         {/* Logo */}
         <div>
           <Image
-            src={scrolled ? "/SweetSpot logo-01.png" : "/SweetSpot logo-03.png"}
+            src={scrolled ? "/SweetSpot logo-01.webp" : "/SweetSpot logo-03.webp"}
             alt="Logo"
             width={150}
             height={150}
-            className="transition-all duration-500"
+            priority
+            placeholder="blur"
+            blurDataURL={scrolled ? "/SweetSpot logo-01.webp" : "/SweetSpot logo-03.webp"}
+            className="transition-transform duration-500"
           />
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6 px-2">
           {sections.map((section) => {
             const isActive = activeSection === section;
             return (

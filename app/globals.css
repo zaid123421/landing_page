@@ -1,14 +1,5 @@
 @import "tailwindcss";
 
-/* @theme inline {
-  --font-sans: var(--font-bein);
-  --font-mono: var(--font-bein);
-} */
-
-body {
-  font-family: var(--font-bein), sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }

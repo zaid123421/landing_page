@@ -22,7 +22,17 @@ export default function ProcessSection({ id }: SectionProps) {
 
       <div className="relative mt-[75px] sm:mt-[250px] h-[250px] sm:h-[350px] scale-55 sm:scale-100">
 
-        <Image src="/SweetSpot logo-08.png" alt="logo" width={100} height={100} />
+    <div className="w-[100px] h-[100px] flex-shrink-0">
+      <Image
+        src="/SweetSpot logo-08.webp"
+        alt="logo"
+        width={100}
+        height={100}
+        placeholder="blur"
+        blurDataURL="/SweetSpot logo-08.webp"
+        className="transition-transform duration-300"
+      />
+    </div>
 
         <div className="flex flex-col items-center absolute top-[-225px] left-[50%] translate-x-[-50%]">
           <RiDraftLine className="text-3xl md:text-4xl" />

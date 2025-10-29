@@ -13,8 +13,16 @@ export default function AboutSection({ id }: SectionProps) {
       <div className="skewed-bg"></div>
 
       {/* Logo */}
-      <div>
-        <Image src="/SweetSpot logo-03.png" alt="Logo" width={300} height={300} />
+      <div className="max-w-[300px] max-h-[300px]">
+        <Image
+          src="/SweetSpot logo-03.webp"
+          alt="Logo"
+          width={300}
+          height={300}
+          priority
+          placeholder="blur"
+          blurDataURL="/SweetSpot logo-03.png"
+        />
       </div>
 
       {/* Typewriter */}

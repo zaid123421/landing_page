@@ -14,8 +14,17 @@ export default function AboutSection({ id }: SectionProps) {
         <h2 className="text-4xl md:text-5xl font-bold mt-8 md:mt-0 mb-4 text-white text-center">
           <span className="text-[#0AB3F6]">About</span> Us
         </h2>
-        <div className="flex justify-between">
-          <Image src="/about.png" alt="about_image" width={400} height={400} className="hidden lg:block" />
+        <div className="flex justify-between relative max-w-full">
+          <Image
+            src="/about.webp"
+            alt="about_image"
+            width={400}
+            height={400}
+            className="hidden lg:block"
+            priority
+            placeholder="blur"
+            blurDataURL="/about-small.webp"
+          />
           <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify pl-[25px] flex items-center">
             We are a passionate team dedicated to providing innovative solutions that help
             businesses grow and succeed, with a focus on delivering high-quality services

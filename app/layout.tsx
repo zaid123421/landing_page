@@ -1,9 +1,11 @@
 import "./globals.css";
 import localFont from 'next/font/local'
 
-const beInFont = localFont({
-  src: '../public/fonts/bein-normal.ttf',
-  variable: "--font-bein",
+import { Raleway } from 'next/font/google'
+
+const raleway = Raleway({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
 })
 
 export default function RootLayout({
@@ -13,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${beInFont.variable}`}>
+      <body lang="en" className={raleway.className}>
         {children}
       </body>
     </html>
