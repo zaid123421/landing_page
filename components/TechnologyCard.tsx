@@ -20,7 +20,7 @@ export default function TechnologyCard({ name, gradientId, svgPath }: Technology
       >
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0AB3F6" />
+            <stop offset="0%" stopColor="#6ce9f8" />
             <stop offset="100%" stopColor="#1B1198" />
           </linearGradient>
         </defs>

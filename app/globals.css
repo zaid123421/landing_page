@@ -15,7 +15,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, #0C1A2B, #1C2842);
+  background: linear-gradient(
+    to top right,
+    #0A1523,
+    #122B46,
+    #1D3A5F
+  );
   transform: skewY(6deg);
   transform-origin: top right;
   z-index: -1;
@@ -27,7 +32,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, #0C1A2B, #1C2842);
+    background: linear-gradient(
+    to top right,
+    #0A1523,
+    #122B46,
+    #1D3A5F
+  );
   transform: skewY(-6deg);
   transform-origin: top right;
   z-index: -1;

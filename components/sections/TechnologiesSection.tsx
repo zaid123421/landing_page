@@ -11,7 +11,7 @@ export default function TechnologiesSection({ id }: SectionProps) {
 
       <div className="text-white text-center flex flex-col items-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
-          Our <span className="text-[#0AB3F6]">Technology</span> Stack
+          Our <span className="text-[#6ce9f8]">Technology</span> Stack
         </h2>
         <p className="max-w-[450px]">We use reliable, modern technologies to ensure high performance and scalability.</p>
       </div>

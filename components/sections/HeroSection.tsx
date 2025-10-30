@@ -12,18 +12,9 @@ export default function AboutSection({ id }: SectionProps) {
     >
       <div className="skewed-bg"></div>
 
-      {/* Logo */}
-      <div className="max-w-[300px] max-h-[300px]">
-        <Image
-          src="/SweetSpot logo-03.webp"
-          alt="Logo"
-          width={300}
-          height={300}
-          priority
-          placeholder="blur"
-          blurDataURL="/SweetSpot logo-03.png"
-        />
-      </div>
+      <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#6ce9f8] to-[#3B82F6]">
+        SweetSpot
+      </h1>
 
       {/* Typewriter */}
       <h1 className="relative z-10 text-3xl font-bold my-7 z-10 relative text-white">
@@ -38,7 +29,7 @@ export default function AboutSection({ id }: SectionProps) {
         />
       </h1>
 
-      <p className="text-lg text-white max-w-2xl mb-8 z-10">
+      <p className="text-lg text-white max-w-2xl mb-[50px] z-10">
         We aim to deliver services that are high-performing, high-quality and efficient.
       </p>
 
