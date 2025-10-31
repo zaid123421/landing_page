@@ -14,7 +14,7 @@ export default function Modal({ message, imageSrc }: ModalProps) {
         className="flex flex-col items-center justify-center bg-white w-full md:w-[600px] rounded-xl"
       >
         <div className="relative w-[300px] h-[300px]">
-          <Image src={imageSrc} alt="Modal Icon" fill className="object-contain" />
+          <Image src={imageSrc} alt="Modal Icon" fill className="object-contain" unoptimized />
         </div>
         <p className="text-center text-[14px] md:text-[20px] font-bold p-10">{message}</p>
       </div>

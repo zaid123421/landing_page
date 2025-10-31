@@ -5,8 +5,9 @@ import Image from "next/image";
 
 export default function AboutSection({ id }: SectionProps) {
   return (
-<section id={id} className="relative min-h-screen flex items-center justify-center">
-  <div className="skewed-bg-about"></div>
+    <section id={id} className="relative min-h-screen flex items-center justify-center">
+
+      <div className="skewed-bg-about"></div>
 
       <div className="mb-8 md:mb-0 md:pr-12 pt-[150px]">
 
@@ -23,7 +24,7 @@ export default function AboutSection({ id }: SectionProps) {
               height={400}
               priority
               placeholder="blur"
-              blurDataURL="/about-small.webp"
+              blurDataURL="/about.webp"
             />
           </div>
           <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify px-5 lg:pl-[25px] break-words">
