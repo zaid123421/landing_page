@@ -6,7 +6,7 @@ import { technologies } from "@/data/technologies";
 
 export default function TechnologiesSection({ id }: SectionProps) {
   return (
-    <section id={id} className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
+    <section id={id} className="relative scroll-mt-16 lg:scroll-mt-0 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
 
       <div className="skewed-bg absolute inset-0 -z-10"></div>
 

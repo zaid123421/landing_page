@@ -29,7 +29,7 @@ export default function Footer() {
           <a target="_blank" href="https://www.linkedin.com/company/sweet-spot-tech/" className="p-2 rounded-xl cursor-pointer hover:bg-[#0AB3F6] ml-2">
             <TiSocialLinkedin className="text-2xl" />
           </a>
-          <a target="_blank" href="https://www.linkedin.com/company/sweet-spot-tech/" className="p-2 rounded-xl cursor-pointer hover:bg-[#0AB3F6] ml-2">
+          <a target="_blank" href="https://www.instagram.com/sweetspotech/#" className="p-2 rounded-xl cursor-pointer hover:bg-[#0AB3F6] ml-2">
             <BiLogoInstagram className="text-2xl" />
           </a>
         </div>
