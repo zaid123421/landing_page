@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F]">
 
-      <div className="flex flex-col items-center py-12">
+      <div className="flex flex-col items-center justify-center py-12">
 
         <Image
           src="/SweetSpot logo-03.webp"
@@ -19,7 +19,6 @@ export default function Footer() {
           height={200}
           placeholder="blur"
           blurDataURL="/SweetSpot logo-03.webp"
-          className=""
         />
 
         <div className="flex mt-5 text-white">
@@ -27,7 +26,7 @@ export default function Footer() {
           <a target="_blank" href="https://www.linkedin.com/company/sweet-spot-tech/" className="p-2 rounded-xl cursor-pointer hover:bg-[#0AB3F6] ml-2"><TiSocialLinkedin className="text-2xl" /></a>
         </div>
 
-        <p className="text-white mt-5 font-semibold px-5 text-center">&copy; 2025 SweetSpot. All rights reserved.</p>
+        <p className="text-white/70 mt-5 font-medium px-5 text-center">&copy; 2025 SweetSpot. All rights reserved.</p>
 
       </div>
 
