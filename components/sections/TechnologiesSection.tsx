@@ -7,6 +7,7 @@ import { technologies } from "@/data/technologies";
 export default function TechnologiesSection({ id }: SectionProps) {
   return (
     <section id={id} className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
+
       <div className="skewed-bg absolute inset-0 -z-10"></div>
 
       <div className="text-white text-center flex flex-col items-center">
@@ -16,10 +17,16 @@ export default function TechnologiesSection({ id }: SectionProps) {
         <p className="max-w-[450px]">We use reliable, modern technologies to ensure high performance and scalability.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center mt-8">
-        {technologies.map((tech) => 
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center mt-8 pb-10">
+        {technologies.map((tech) =>
             tech.name === "React.js" ? (
-              <div key={tech.name} className="p-3 rounded-2xl transition flex flex-col items-center w-[200px]">
+              <div key={tech.name}
+                className="p-3 rounded-2xl transition flex flex-col items-center w-[125px] sm:w-[200px]
+                bg-gradient-to-br from-[#0C1A2B]/80 to-[#1C2842]/80
+                backdrop-blur-sm shadow-lg border border-white/10
+                hover:shadow-[0_0_20px_2px_rgba(108,233,248,0.4)]
+                hover:scale-105 duration-300"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-16 h-16">
                   <defs>
                     <linearGradient id="reactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -40,6 +47,7 @@ export default function TechnologiesSection({ id }: SectionProps) {
             )
         )}
       </div>
+
     </section>
   );
 }

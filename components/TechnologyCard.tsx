@@ -8,7 +8,13 @@ type TechnologyCardProps = {
 
 export default function TechnologyCard({ name, gradientId, svgPath }: TechnologyCardProps) {
   return (
-    <div className="p-3 rounded-2xl transition flex flex-col items-center w-[200px]">
+    <div
+      className="p-3 rounded-2xl transition flex flex-col items-center w-[130px] sm:w-[200px]
+      bg-gradient-to-br from-[#0C1A2B]/80 to-[#1C2842]/80
+      backdrop-blur-sm shadow-lg border border-white/10
+      hover:shadow-[0_0_20px_2px_rgba(108,233,248,0.4)]
+      hover:scale-105 duration-300"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox={
