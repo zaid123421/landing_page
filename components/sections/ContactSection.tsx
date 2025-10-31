@@ -159,7 +159,7 @@ export default function ContactSection({ id }: SectionProps) {
               <MdEmail className="text-3xl mr-5 text-[#0AB3F6]" />
               <div>
                 <h4 className="text-xl font-semibold">Email:</h4>
-                <p className="font-medium text-gray-500">team@sweetspot.com</p>
+                <p className="font-medium text-gray-500">info@sweetspotech.com</p>
               </div>
             </div>
 
