@@ -6,7 +6,7 @@ import { technologies } from "@/data/technologies";
 
 export default function TechnologiesSection({ id }: SectionProps) {
   return (
-    <section id={id} className="relative scroll-mt-16 lg:scroll-mt-0 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
+    <section id={id} className="relative scroll-mt-8 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
 
       <div className="skewed-bg absolute inset-0 -z-10"></div>
 
@@ -14,14 +14,14 @@ export default function TechnologiesSection({ id }: SectionProps) {
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           Our <span className="text-[#6ce9f8]">Technology</span> Stack
         </h2>
-        <p className="max-w-[450px]">We use reliable, modern technologies to ensure high performance and scalability.</p>
+        <p className="max-w-[450px] font-semibold">We use reliable, modern technologies to ensure high performance and scalability.</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center mt-8 pb-10">
         {technologies.map((tech) =>
             tech.name === "React.js" ? (
               <div key={tech.name}
-                className="p-3 rounded-2xl transition flex flex-col items-center w-[125px] sm:w-[200px]
+                className="px-3 py-5 transition flex flex-col items-center w-[125px] sm:w-[200px]
                 bg-gradient-to-br from-[#0C1A2B]/80 to-[#1C2842]/80
                 backdrop-blur-sm shadow-lg border border-white/10
                 hover:shadow-[0_0_20px_2px_rgba(108,233,248,0.4)]

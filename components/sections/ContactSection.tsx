@@ -89,7 +89,7 @@ export default function ContactSection({ id }: SectionProps) {
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
           <span className="text-[#0AB3F6]">Contact</span> Us
         </h2>
-        <p className="text-gray-500 mb-8">Let&#39;s Build Something Great Together</p>
+        <p className="text-gray-500 font-semibold mb-8">Let&#39;s Build Something Great Together</p>
 
         <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-8 w-full max-w-6xl">
 

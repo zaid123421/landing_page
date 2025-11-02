@@ -9,7 +9,7 @@ import { BiLogoInstagram } from "react-icons/bi";
 export default function Footer() {
 
   return (
-    <footer className="bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F]">
+    <footer className="bg-gradient-to-tr from-[#0A3D62] to-[#1E90FF] ">
 
       <div className="flex flex-col items-center justify-center py-12">
 

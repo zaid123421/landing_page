@@ -9,9 +9,9 @@ export default function AboutSection({ id }: SectionProps) {
 
       <div className="skewed-bg-about"></div>
 
-      <div className="mb-8 md:mb-0 md:pr-12 pt-[150px]">
+      <div className="mb-8 md:mb-0 md:pr-12">
 
-        <h2 className="text-4xl md:text-5xl font-bold mt-8 md:mt-0 mb-4 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-bold pt-[200px] sm:pt-[100px] xl:pt-16  mb-8 text-white text-center">
           <span className="text-[#6ce9f8]">About</span> Us
         </h2>
 

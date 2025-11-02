@@ -8,10 +8,11 @@ import HeroSection from "@/components/sections/HeroSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import TechnologiesSection from "@/components/sections/TechnologiesSection";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState("home");
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -29,6 +30,70 @@ export default function Page() {
 
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const prevScrollBehavior = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+
+    const links = document.querySelectorAll("a[href^='#']");
+
+    const easeOutExpo = (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t));
+    const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+
+    const cancelCurrent = () => {
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
+    };
+
+    const handleClick = (e: Event) => {
+      e.preventDefault();
+      const href = (e.currentTarget as HTMLAnchorElement).getAttribute("href");
+      if (!href?.startsWith("#")) return;
+      const targetId = href.substring(1);
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
+      const headerEl = document.querySelector("header") as HTMLElement | null;
+      const headerHeight = headerEl ? headerEl.offsetHeight : 0;
+      const extraSpace = 14;
+      const targetY = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraSpace;
+
+      const distance = Math.abs(window.scrollY - targetY);
+      const duration = clamp(distance / 0.9, 900, 2500); 
+      cancelCurrent();
+      let startTime: number | null = null;
+      const startY = window.scrollY;
+
+      const step = (timestamp: number) => {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutExpo(progress);
+        const currentY = startY + (targetY - startY) * eased;
+
+        window.scrollTo(0, Math.round(currentY));
+
+        if (progress < 1) {
+          rafRef.current = requestAnimationFrame(step);
+        } else {
+          window.scrollTo(0, targetY);
+          rafRef.current = null;
+        }
+      };
+
+      rafRef.current = requestAnimationFrame(step);
+    };
+
+    links.forEach((link) => link.addEventListener("click", handleClick));
+    return () => {
+      cancelCurrent();
+      links.forEach((link) => link.removeEventListener("click", handleClick));
+      html.style.scrollBehavior = prevScrollBehavior || "";
+    };
   }, []);
 
   return (
