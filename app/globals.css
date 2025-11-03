@@ -24,7 +24,7 @@ body {
 
 .skewed-reversed {
   position: absolute;
-  top: 225px;
+  top: 125px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@ body {
     #122B46,
     #1D3A5F
   );
-  transform: skewY(-6deg);
+  transform: skewY(6deg);
   transform-origin: top left;
   z-index: -20;
 }

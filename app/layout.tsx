@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body lang="en" className={raleway.className}>
+      <body className={raleway.className}>
         {children}
       </body>
     </html>
