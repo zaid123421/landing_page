@@ -2,7 +2,6 @@
 
 import { SectionProps } from "@/types/sections";
 import Typewriter from "typewriter-effect";
-import Image from 'next/image'
 
 export default function AboutSection({ id }: SectionProps) {
   return (

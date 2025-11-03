@@ -6,6 +6,27 @@ const raleway = Raleway({
   subsets: ['latin'],
 })
 
+export const metadata = {
+  title: "SweetSpot",
+  description: "SweetSpot aims to deliver high-performing, high-quality, and efficient services for an exceptional user experience.",
+  keywords: [
+    "web development company",
+    "mobile app development",
+    "custom software solutions",
+    "UI/UX design services",
+    "cloud computing solutions",
+    "chatbots and virtual assistants",
+    "software development agency",
+    "digital transformation",
+    "tech solutions for businesses",
+    "high-quality software development"
+  ],
+    robots: {
+    index: true,
+    follow: true,
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,9 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <body lang="en" className={raleway.className}>
         {children}
       </body>
