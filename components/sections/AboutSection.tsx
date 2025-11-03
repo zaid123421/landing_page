@@ -5,13 +5,11 @@ import Image from "next/image";
 
 export default function AboutSection({ id }: SectionProps) {
   return (
-    <section id={id} className="relative min-h-screen flex items-center justify-center">
-
-      <div className="skewed-bg-about"></div>
+    <section id={id} className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F] mt-16 p-5">
 
       <div className="mb-8 md:mb-0 md:pr-12">
 
-        <h2 className="text-4xl md:text-5xl font-bold pt-[200px] sm:pt-[100px] xl:pt-16  mb-8 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-bold  xl:pt-16 mb-8 text-white text-center">
           <span className="text-[#6ce9f8]">About</span> Us
         </h2>
 
@@ -27,7 +25,7 @@ export default function AboutSection({ id }: SectionProps) {
               blurDataURL="/about.webp"
             />
           </div>
-          <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify px-5 lg:pl-[25px] break-words">
+          <p className="max-w-[700px] leading-[1.7] text-white text-lg md:text-xl text-justify break-words">
             We are a passionate team dedicated to providing innovative solutions that help
             businesses grow and succeed, with a focus on delivering high-quality services
             tailored to our clients&#39; needs. Sweetspot is a specialized digital agency offering

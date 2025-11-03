@@ -6,9 +6,7 @@ import { technologies } from "@/data/technologies";
 
 export default function TechnologiesSection({ id }: SectionProps) {
   return (
-    <section id={id} className="relative scroll-mt-8 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20">
-
-      <div className="skewed-bg absolute inset-0 -z-10"></div>
+    <section id={id} className="relative scroll-mt-16 lg:scroll-mt-0 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-10 pb-20 bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F]">
 
       <div className="text-white text-center flex flex-col items-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
@@ -21,7 +19,7 @@ export default function TechnologiesSection({ id }: SectionProps) {
         {technologies.map((tech) =>
             tech.name === "React.js" ? (
               <div key={tech.name}
-                className="px-3 py-5 transition flex flex-col items-center w-[125px] sm:w-[200px]
+                className="px-3 py-5 transition flex flex-col items-center w-[125px] sm:w-[150px]
                 bg-gradient-to-br from-[#0C1A2B]/80 to-[#1C2842]/80
                 backdrop-blur-sm shadow-lg border border-white/10
                 hover:shadow-[0_0_20px_2px_rgba(108,233,248,0.4)]

@@ -9,7 +9,9 @@ import { BiLogoInstagram } from "react-icons/bi";
 export default function Footer() {
 
   return (
-    <footer className="bg-gradient-to-tr from-[#0A3D62] to-[#1E90FF] ">
+    <footer className="relative pt-[200px] overflow-hidden">
+
+      <div className="skewed-reversed"></div>
 
       <div className="flex flex-col items-center justify-center py-12">
 

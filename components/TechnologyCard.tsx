@@ -9,7 +9,7 @@ type TechnologyCardProps = {
 export default function TechnologyCard({ name, gradientId, svgPath }: TechnologyCardProps) {
   return (
     <div
-      className="px-3 py-5 transition flex flex-col items-center w-[130px] sm:w-[200px]
+      className="px-3 py-5 transition flex flex-col items-center w-[125px] sm:w-[150px]
       bg-gradient-to-br from-[#0C1A2B]/80 to-[#1C2842]/80
       backdrop-blur-sm shadow-lg border border-white/10
       hover:shadow-[0_0_20px_2px_rgba(108,233,248,0.4)]
