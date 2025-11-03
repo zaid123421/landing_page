@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutSection({ id }: SectionProps) {
   return (
-    <section id={id} className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F] mt-16 p-5">
+    <section id={id} className="relative scroll-mt-16 min-h-screen flex items-center justify-center bg-gradient-to-tr from-[#0A1523] via-[#122B46] to-[#1D3A5F] mt-16 p-5">
 
       <div className="mb-8 md:mb-0 md:pr-12">
 
