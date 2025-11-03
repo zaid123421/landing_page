@@ -22,14 +22,7 @@ export default function Header({ activeSection }: Props) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const sections = [
-    "hero",
-    "services",
-    "about",
-    "process",
-    "technologies",
-    "contact",
-  ];
+  const sections = ["hero","services","about","process","technologies","contact"];
 
   const toggleLang = () => setLang((prev) => (prev === "EN" ? "AR" : "EN"));
 
