@@ -3,7 +3,7 @@
 import { SectionProps } from "@/types/sections";
 import Typewriter from "typewriter-effect";
 
-export default function AboutSection({ id }: SectionProps) {
+export default function HomeSection({ id }: SectionProps) {
   return (
     <section
       id={id}

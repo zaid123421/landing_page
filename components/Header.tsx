@@ -22,7 +22,7 @@ export default function Header({ activeSection }: Props) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const sections = ["hero","services","about","process","technologies","contact"];
+  const sections = ["home","services","about","process","technologies","contact"];
 
   const toggleLang = () => setLang((prev) => (prev === "EN" ? "AR" : "EN"));
 
@@ -71,9 +71,7 @@ export default function Header({ activeSection }: Props) {
                   hover:text-[#0AB3F6]
                 `}
               >
-                {section === "hero"
-                  ? "Home"
-                  : section.charAt(0).toUpperCase() + section.slice(1)}
+                {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             );
           })}
@@ -128,9 +126,7 @@ export default function Header({ activeSection }: Props) {
                   onClick={() => setMenuOpen(false)}
                   className="hover:text-[#00e0ff] transition-colors"
                 >
-                  {section === "hero"
-                    ? "Home"
-                    : section.charAt(0).toUpperCase() + section.slice(1)}
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
                 </a>
               ))}
 

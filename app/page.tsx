@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
-import HeroSection from "@/components/sections/HeroSection";
+import HomeSection from "@/components/sections/HomeSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import TechnologiesSection from "@/components/sections/TechnologiesSection";
@@ -99,7 +99,7 @@ export default function Page() {
   return (
     <>
       <Header activeSection={activeSection} />
-      <HeroSection id="hero" />
+      <HomeSection id="home" />
       <ServicesSection id="services" />
       <AboutSection id="about" />
       <ProcessSection id="process" />
