@@ -16,8 +16,9 @@ export default function Page() {
 
   useEffect(() => {
     const html = document.documentElement;
-    const prevScrollBehavior = html.style.scrollBehavior;
-    html.style.scrollBehavior = "auto";
+
+    const isMobile = window.innerWidth <= 768;
+    html.style.scrollBehavior = isMobile ? "smooth" : "auto";
 
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll("a[href^='#']");
@@ -61,7 +62,7 @@ export default function Page() {
       const targetY = target.offsetTop - headerHeight;
 
       const distance = Math.abs(startY - targetY);
-      const duration = clamp(distance / 0.9, 900, 1500);
+      const duration = clamp(distance / 0.9, 900, 2500);
 
       cancelCurrent();
       let startTime: number | null = null;
@@ -91,7 +92,7 @@ export default function Page() {
       observer.disconnect();
       cancelCurrent();
       links.forEach((link) => link.removeEventListener("click", handleClick));
-      html.style.scrollBehavior = prevScrollBehavior || "";
+      html.style.scrollBehavior = "auto";
     };
   }, []);
 
