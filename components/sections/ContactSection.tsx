@@ -86,9 +86,9 @@ export default function ContactSection({ id }: SectionProps) {
         id={id}
         className="scroll-mt-16 lg:scroll-mt-0 min-h-screen flex flex-col items-center justify-center px-6 md:px-20 py-10"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
           <span className="text-[#0AB3F6]">Contact</span> Us
-        </h2>
+        </h1>
         <p className="text-gray-500 font-semibold mb-8">Let&#39;s Build Something Great Together</p>
 
         <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-8 w-full max-w-6xl">

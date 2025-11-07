@@ -26,9 +26,9 @@ export default function ProcessSection({ id }: SectionProps) {
       id={id}
       className="scroll-mt-16 my-[100px] relative min-h-screen flex flex-col items-center justify-start px-6 md:px-20 pt-10 pb-20"
     >
-      <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center w-full">
+      <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center w-full">
         Our <span className="text-[#0AB3F6]">Process</span>
-      </h2>
+      </h1>
 
       {isMobile ? (
         <div className="grid grid-cols-2 gap-6">
@@ -40,7 +40,7 @@ export default function ProcessSection({ id }: SectionProps) {
         <div className="relative mt-2 w-[80vw] max-w-[500px] h-[80vw] max-h-[500px] hidden sm:block">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
             <Image
-              src="/SweetSpot logo-08.webp"
+              src="/SweetSpot-logo-08.webp"
               width={125}
               height={125}
               alt="Process Image"

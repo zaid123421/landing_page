@@ -38,7 +38,7 @@ export default function Header({ activeSection }: Props) {
         {/* Logo */}
         <div>
           <Image
-            src={scrolled ? "/SweetSpot logo-01.webp" : "/SweetSpot logo-03.webp"}
+            src={scrolled ? "/SweetSpot-logo-01.webp" : "/SweetSpot-logo-03.webp"}
             alt="Logo"
             width={150}
             height={150}

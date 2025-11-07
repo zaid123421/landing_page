@@ -9,9 +9,9 @@ export default function AboutSection({ id }: SectionProps) {
 
       <div className="mb-8 md:mb-0 md:pr-12">
 
-        <h2 className="text-4xl md:text-5xl font-bold  xl:pt-16 mb-8 text-white text-center">
+        <h1 className="text-4xl md:text-5xl font-bold  xl:pt-16 mb-8 text-white text-center">
           <span className="text-[#6ce9f8]">About</span> Us
-        </h2>
+        </h1>
 
         <div className="flex flex-col lg:flex-row justify-between items-start max-w-full">
           <div className="hidden lg:block w-[400px] h-[400px] flex-shrink-0">
