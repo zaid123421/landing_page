@@ -27,18 +27,30 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
   other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "SweetSpot Tech",
-      "url": "https://sweetspotech.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sweetspotech.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string",
+    "application/ld+json": JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SweetSpot Tech",
+        "url": "https://sweetspotech.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sweetspotech.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
       },
-    }),
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SweetSpot Tech",
+        "url": "https://sweetspotech.com",
+        "logo": "https://sweetspotech.com/favicon.ico"
+      }
+    ]),
   },
 };
 
